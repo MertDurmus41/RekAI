@@ -11,7 +11,8 @@ import { createClient } from "@/lib/supabase/server";
 const DAILY_LIMIT = 20;
 const SUPABASE_READY = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
 
-export const maxDuration = 240;
+// Vercel'in ücretsiz planındaki üst sınır; bir remix yaklaşık 20 saniye sürer.
+export const maxDuration = 60;
 
 const MAX_UPLOAD_BYTES = 8 * 1024 * 1024;
 const UPLOAD_TYPES = new Set(["image/png", "image/jpeg", "image/webp"]);
@@ -131,7 +132,13 @@ export async function POST(request: Request) {
   };
 
   try {
-    const original = await readFile(path.join(process.cwd(), "public", ad.src));
+    // Yerelde görsel diskten okunur. Vercel'de public/ klasörü fonksiyonun diskinde bulunmaz;
+    // orada görsel sitenin kendi adresinden indirilir.
+    const original = await readFile(path.join(process.cwd(), "public", ad.src)).catch(async () => {
+      const res = await fetch(new URL(ad.src, request.url));
+      if (!res.ok) throw new Error(`reklam görseli okunamadı: ${ad.src} (${res.status})`);
+      return Buffer.from(await res.arrayBuffer());
+    });
     const meta = await sharp(original).metadata();
     const W = meta.width!;
     const H = meta.height!;
