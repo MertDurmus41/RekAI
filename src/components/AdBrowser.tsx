@@ -45,7 +45,7 @@ function rank(sector: string) {
   return i === -1 ? SECTOR_ORDER.length : i;
 }
 
-export function AdBrowser() {
+export function AdBrowser({ email = null }: { email?: string | null }) {
   const [query, setQuery] = useState("");
   const [sector, setSector] = useState<string | null>(null);
   const [brands, setBrands] = useState<string[]>([]);
@@ -94,7 +94,7 @@ export function AdBrowser() {
     <div className="flex min-h-screen flex-col bg-white">
       {/* Üst bar: logo, arama, giriş */}
       <header className="mx-auto flex w-full max-w-[1400px] items-center gap-6 px-5 py-5">
-        <Link href="/" aria-label="adremix ana sayfa" className="shrink-0">
+        <Link href="/galeri" aria-label="RekAI galeri" className="shrink-0">
           <Logo />
         </Link>
         <div className="relative mx-auto w-full max-w-2xl">
@@ -117,13 +117,27 @@ export function AdBrowser() {
             className="w-full rounded-lg border-2 border-io bg-white py-3 pr-4 pl-11 text-sm outline-none placeholder:text-mute focus:ring-4 focus:ring-io/15"
           />
         </div>
-        <Link
-          href="/login"
-          className="shrink-0 rounded-lg border-2 border-ib/30 px-5 py-2.5 text-sm font-semibold text-ib hover:border-ib hover:bg-ib-soft"
-        >
-          Giriş Yap
-          <span className="block text-[11px] font-normal text-mute">veya üye ol</span>
-        </Link>
+        {email ? (
+          <div className="flex shrink-0 items-center gap-4 text-sm">
+            <Link href="/remixes" className="font-semibold text-ib hover:underline">
+              Remixlerim
+            </Link>
+            <span className="hidden max-w-44 truncate text-mute lg:inline">{email}</span>
+            <form action="/auth/signout" method="post">
+              <button type="submit" className="font-semibold text-io hover:underline">
+                Çıkış
+              </button>
+            </form>
+          </div>
+        ) : (
+          <Link
+            href="/login"
+            className="shrink-0 rounded-lg border-2 border-ib/30 px-5 py-2.5 text-sm font-semibold text-ib hover:border-ib hover:bg-ib-soft"
+          >
+            Giriş Yap
+            <span className="block text-[11px] font-normal text-mute">veya üye ol</span>
+          </Link>
+        )}
       </header>
 
       {/* Renkli şerit */}

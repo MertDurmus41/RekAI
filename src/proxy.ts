@@ -29,7 +29,7 @@ export async function proxy(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const { pathname } = request.nextUrl;
-  const isPublic = pathname.startsWith("/login") || pathname.startsWith("/auth");
+  const isPublic = pathname === "/" || pathname.startsWith("/login") || pathname.startsWith("/auth");
 
   if (!user && !isPublic) {
     if (pathname.startsWith("/api")) {
@@ -40,9 +40,10 @@ export async function proxy(request: NextRequest) {
     url.search = "";
     return NextResponse.redirect(url);
   }
-  if (user && pathname.startsWith("/login")) {
+  if (user && (pathname === "/" || pathname.startsWith("/login"))) {
     const url = request.nextUrl.clone();
-    url.pathname = "/";
+    url.pathname = "/galeri";
+    url.search = "";
     return NextResponse.redirect(url);
   }
   return response;

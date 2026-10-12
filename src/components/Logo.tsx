@@ -8,7 +8,7 @@ export function Logo() {
       </svg>
       <div>
         <div className="text-[26px] font-extrabold tracking-tight text-io">
-          ad<span className="text-ib">remix</span>
+          Rek<span className="text-ib">AI</span>
         </div>
         <div className="mt-1 text-[11px] font-semibold text-ib">Esnaf için reklam şablonları</div>
       </div>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AdRemix",
+  title: "RekAI",
   description: "Tutan reklamları kendi dükkanına uyarla.",
 };
 

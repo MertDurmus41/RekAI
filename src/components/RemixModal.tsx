@@ -28,6 +28,20 @@ const PEN_SIZES = [
   { name: "Kalın", value: 0.016 },
 ];
 
+/** Vercel fonksiyonlarına gelen istek en fazla 4,5 MB olabilir; yüklenen logoyu tarayıcıda küçültürüz. */
+async function shrinkImage(file: File, maxSide: number): Promise<Blob> {
+  const bitmap = await createImageBitmap(file);
+  const scale = Math.min(1, maxSide / Math.max(bitmap.width, bitmap.height));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(bitmap.width * scale);
+  canvas.height = Math.round(bitmap.height * scale);
+  canvas.getContext("2d")!.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+  bitmap.close();
+  const png = await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/png"));
+  if (png && png.size < 2.5 * 1024 * 1024) return png;
+  return (await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/jpeg", 0.9))) ?? file;
+}
+
 export function RemixModal({ ad, onClose }: { ad: SampleAd; onClose: () => void }) {
   const [prompt, setPrompt] = useState("");
   const [file, setFile] = useState<File | null>(null);
@@ -60,10 +74,12 @@ export function RemixModal({ ad, onClose }: { ad: SampleAd; onClose: () => void 
     const body = new FormData();
     body.set("adId", ad.id);
     body.set("prompt", prompt);
-    if (file) body.set("file", file);
-    const marks = await renderMarks(strokes, ad.width, ad.height);
-    if (marks) body.set("marks", marks, "marks.png");
     try {
+      if (file) body.set("file", await shrinkImage(file, 1400), "logo.png");
+      // Çizimler yalnızca yer göstermek için kullanılır; düşük çözünürlük yeter.
+      const k = Math.min(1, 1024 / Math.max(ad.width, ad.height));
+      const marks = await renderMarks(strokes, Math.round(ad.width * k), Math.round(ad.height * k));
+      if (marks) body.set("marks", marks, "marks.png");
       const res = await fetch("/api/remix", { method: "POST", body });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error);
@@ -256,7 +272,7 @@ export function RemixModal({ ad, onClose }: { ad: SampleAd; onClose: () => void 
               <div className="mt-4 flex flex-wrap gap-2">
                 <a
                   href={result.url}
-                  download={`adremix-${result.id}.png`}
+                  download={`rekai-${result.id}.png`}
                   className="rounded-lg bg-ib px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
                 >
                   Görseli indir

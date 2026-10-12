@@ -6,6 +6,10 @@ import { NextResponse } from "next/server";
 import sharp, { type Sharp } from "sharp";
 import { ADS } from "@/data/ads";
 import { buildRemixPrompt, paddingFor } from "@/lib/remix-prompt";
+import { createClient } from "@/lib/supabase/server";
+
+const DAILY_LIMIT = 20;
+const SUPABASE_READY = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 export const maxDuration = 240;
 
@@ -78,7 +82,24 @@ function validImage(file: unknown): file is File {
 }
 
 export async function POST(request: Request) {
-  if (!process.env.FAL_KEY) return fail("FAL_KEY .env.local içinde tanımlı değil.", 500);
+  if (!process.env.FAL_KEY) return fail("FAL_KEY tanımlı değil.", 500);
+
+  // Supabase bağlıysa giriş zorunlu ve kullanıcı başına günlük sınır var; değilse (yerel demo) kısıtsız.
+  const supabase = SUPABASE_READY ? await createClient() : null;
+  let userId: string | null = null;
+  if (supabase) {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return fail("Giriş yapmalısın.", 401);
+    userId = user.id;
+    const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+    const { count } = await supabase
+      .from("remixes")
+      .select("id", { count: "exact", head: true })
+      .gte("created_at", since);
+    if ((count ?? 0) >= DAILY_LIMIT) return fail(`Günlük ${DAILY_LIMIT} remix sınırına ulaştın. Yarın tekrar dene.`, 429);
+  }
 
   const form = await request.formData();
   const adId = form.get("adId");
@@ -208,12 +229,33 @@ export async function POST(request: Request) {
             .toBuffer();
 
     const id = randomUUID();
-    await mkdir(path.join(process.cwd(), "public", "remixes"), { recursive: true });
-    await writeFile(path.join(process.cwd(), "public", "remixes", `${id}.png`), output);
+    let url: string;
+    if (supabase && userId) {
+      // Vercel'de dosya sistemi salt okunurdur; sonuç kullanıcının kendi klasörüne (RLS) yüklenir.
+      const resultPath = `${userId}/${id}.png`;
+      const { error: saveError } = await supabase.storage
+        .from("remixes")
+        .upload(resultPath, output, { contentType: "image/png" });
+      if (saveError) throw saveError;
+      const { error: rowError } = await supabase.from("remixes").insert({
+        id,
+        user_id: userId,
+        ad_id: ad.id,
+        prompt: command.trim(),
+        result_path: resultPath,
+      });
+      if (rowError) throw rowError;
+      const { data: signed } = await supabase.storage.from("remixes").createSignedUrl(resultPath, 60 * 60 * 24);
+      url = signed?.signedUrl ?? "";
+    } else {
+      await mkdir(path.join(process.cwd(), "public", "remixes"), { recursive: true });
+      await writeFile(path.join(process.cwd(), "public", "remixes", `${id}.png`), output);
+      url = `/remixes/${id}.png`;
+    }
 
     lap("save");
     console.info("remix timings (ms)", timings);
-    return NextResponse.json({ id, url: `/remixes/${id}.png`, width: W, height: H, steps, timings });
+    return NextResponse.json({ id, url, width: W, height: H, steps });
   } catch (error) {
     console.error("remix failed", error);
     return fail("Görsel üretilemedi. Tekrar dene.", 502);

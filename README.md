@@ -1,4 +1,4 @@
-# adremix
+# RekAI
 
 Esnaf, kafe ve küçük dükkân sahipleri için reklam remix aracı. Kullanıcı, yayında olan gerçek reklamlardan birini seçer, ne değişmesini istediğini yazar (isterse kalemle işaretler ve kendi logosunu yükler) ve yalnızca istediği şeyler değişmiş yeni bir görsel alır.
 
