@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* International orange / international blue ve yanına uyan tonlar */
+  --color-io: #ff4f00;
+  --color-io-dark: #d94300;
+  --color-io-soft: #fff1e9;
+  --color-ib: #002fa7;
+  --color-ib-soft: #e8eefc;
+  --color-sky: #3aa9ff;
+  --color-sun: #ffb400;
+  --color-ink: #1b1f2a;
+  --color-mute: #6b7280;
+  --color-line: #e5e7ec;
+  --color-wash: #f5f6f8;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+/* Üretim bekleme ekranı animasyonları */
+@keyframes ar-scan {
+  0% { transform: translateY(-20%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(1400%); opacity: 0; }
+}
+@keyframes ar-aurora {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes ar-float {
+  0% { transform: translateY(20px) scale(0.6) rotate(0deg); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-120px) scale(1.1) rotate(25deg); opacity: 0; }
+}
+@keyframes ar-pulse-ring {
+  0% { transform: scale(0.85); opacity: 0.7; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+@keyframes ar-step-in {
+  0% { transform: translateY(8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.ar-scan { animation: ar-scan 2.4s ease-in-out infinite; }
+.ar-aurora { background-size: 300% 300%; animation: ar-aurora 5s ease infinite; }
+.ar-float { animation: ar-float 3.2s ease-out infinite; }
+.ar-ring { animation: ar-pulse-ring 1.8s ease-out infinite; }
+.ar-step { animation: ar-step-in 0.35s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .ar-scan, .ar-aurora, .ar-float, .ar-ring, .ar-step { animation: none; }
+}
