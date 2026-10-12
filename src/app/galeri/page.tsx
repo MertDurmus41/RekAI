@@ -9,7 +9,7 @@ export default async function GalleryPage() {
     const {
       data: { user },
     } = await supabase.auth.getUser();
-    email = user?.email ?? null;
+    email = (user?.user_metadata?.email_label as string | undefined) ?? user?.email ?? null;
   }
   return <AdBrowser email={email} />;
 }

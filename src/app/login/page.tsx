@@ -25,7 +25,7 @@ function LoginForm() {
   const params = useSearchParams();
   const signup = params.get("mode") === "signup";
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "sending">("idle");
   const [error, setError] = useState<string | null>(
     params.get("error") ? "Giriş bağlantısı geçersiz veya süresi dolmuş." : null,
   );
@@ -40,30 +40,27 @@ function LoginForm() {
     if (error) setError(error.message);
   }
 
+  // E-posta doğrulaması yok: yazılan adres hesaba etiket olarak kaydedilir ve kullanıcı doğrudan içeri alınır.
+  // Arka planda Supabase'in anonim oturumu kullanılır; böylece her kullanıcının remixleri ayrı kalır.
   async function withEmail(e: React.FormEvent) {
     e.preventDefault();
     if (!AUTH_READY) return router.push("/galeri");
     setStatus("sending");
     setError(null);
-    const { error } = await createClient().auth.signInWithOtp({
-      email,
-      options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
+    const { error } = await createClient().auth.signInAnonymously({
+      options: { data: { email_label: email.trim() } },
     });
     if (error) {
-      setError(error.message);
+      setError(
+        error.message.toLowerCase().includes("anonymous")
+          ? "Giriş şu an kapalı: Supabase'de Authentication → Sign In / Providers → \"Allow anonymous sign-ins\" açılmalı."
+          : error.message,
+      );
       setStatus("idle");
-    } else {
-      setStatus("sent");
+      return;
     }
-  }
-
-  if (status === "sent") {
-    return (
-      <p className="text-sm text-ink">
-        <span className="font-semibold">{email}</span> adresine giriş bağlantısı gönderdik. E-postandaki bağlantıya
-        tıkla.
-      </p>
-    );
+    router.push("/galeri");
+    router.refresh();
   }
 
   return (
@@ -107,7 +104,7 @@ function LoginForm() {
           disabled={status === "sending"}
           className="rounded-lg bg-io px-3 py-3 text-sm font-bold text-white hover:bg-io-dark disabled:opacity-60"
         >
-          {status === "sending" ? "Gönderiliyor…" : "E-posta ile devam et"}
+          {status === "sending" ? "Giriliyor…" : "Devam et"}
         </button>
         {error && (
           <p role="alert" className="text-sm font-medium text-red-600">
