@@ -3918,5 +3918,997 @@
     ],
     "startedAt": "2026-04-26T07:00:00.000Z",
     "sourceUrl": "https://www.facebook.com/ads/library/?id=1633914677727551"
+  },
+  {
+    "id": "8742414d3892",
+    "file": "8742414d3892.jpg",
+    "brand": "Starbucks",
+    "sector": "Kahve & Kafe",
+    "type": "İndirim",
+    "title": "2 for $6: Starbucks içecekleri",
+    "width": 600,
+    "height": 500,
+    "colors": [
+      "yesil"
+    ],
+    "startedAt": "2026-07-01T04:00:00.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR16297030444329730049/creative/CR06889429298596282369"
+  },
+  {
+    "id": "795692605f28",
+    "file": "795692605f28.jpg",
+    "brand": "Lavazza",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Your moment, your coffee: abonelik",
+    "width": 300,
+    "height": 600,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-06-25T13:30:00.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR11552040151546855425/creative/CR04397992987221557249"
+  },
+  {
+    "id": "617796d559b5",
+    "file": "617796d559b5.jpg",
+    "brand": "Lavazza",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Discover Lavazza promotions",
+    "width": 600,
+    "height": 500,
+    "colors": [
+      "mavi",
+      "turuncu"
+    ],
+    "startedAt": "2026-03-24T13:00:00.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR11552040151546855425/creative/CR11265049826942779393"
+  },
+  {
+    "id": "4547aa1b4710",
+    "file": "4547aa1b4710.jpg",
+    "brand": "Lavazza",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Lavazza: Shop now",
+    "width": 600,
+    "height": 500,
+    "colors": [
+      "mavi",
+      "turuncu"
+    ],
+    "startedAt": "2026-03-19T09:00:00.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR11552040151546855425/creative/CR01208791134977916929"
+  },
+  {
+    "id": "fa580c84fc2d",
+    "file": "fa580c84fc2d.jpg",
+    "brand": "Dunkin'",
+    "sector": "Kahve & Kafe",
+    "type": "Menü",
+    "title": "Fuel your day with Dunkin'",
+    "width": 600,
+    "height": 500,
+    "colors": [
+      "turuncu",
+      "kirmizi"
+    ],
+    "startedAt": "2025-12-24T01:30:32.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR05304284266962616321/creative/CR07988462157777862657"
+  },
+  {
+    "id": "22a3f9e59d07",
+    "file": "22a3f9e59d07.jpg",
+    "brand": "Peet's Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Coffee that speaks for itself",
+    "width": 600,
+    "height": 500,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2025-11-19T08:00:00.000Z",
+    "sourceUrl": "https://adstransparency.google.com/advertiser/AR12565168991884017665/creative/CR05006134148444717057"
+  },
+  {
+    "id": "649936d0d804",
+    "file": "649936d0d804.jpg",
+    "brand": "Orocafearte",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Tatlı + Kahve 350₺",
+    "width": 1080,
+    "height": 1920,
+    "colors": [
+      "sari",
+      "kahverengi"
+    ],
+    "startedAt": "2026-09-25T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1405068365068549"
+  },
+  {
+    "id": "32451239ddba",
+    "file": "32451239ddba.jpg",
+    "brand": "Orocafearte",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Waffle + içecek 350₺, Esenler'de",
+    "width": 720,
+    "height": 1280,
+    "colors": [
+      "sari",
+      "mavi"
+    ],
+    "startedAt": "2026-09-21T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1669891457806053"
+  },
+  {
+    "id": "1a653c1ae39e",
+    "file": "1a653c1ae39e.jpg",
+    "brand": "Nevada Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Sandviçini al, içeceğin bizden",
+    "width": 1080,
+    "height": 1920,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2026-10-21T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1746019460464102"
+  },
+  {
+    "id": "434ab7eed8e5",
+    "file": "434ab7eed8e5.jpg",
+    "brand": "Yeldeğirmeni Kurukahvecisi",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Siyah İnci filtre kahve, %100 Arabica",
+    "width": 1200,
+    "height": 1800,
+    "colors": [
+      "turuncu"
+    ],
+    "startedAt": "2026-03-13T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=2116159339234995"
+  },
+  {
+    "id": "4218bdf83f86",
+    "file": "4218bdf83f86.jpg",
+    "brand": "Costa Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "İmza Harman Mocha Italia",
+    "width": 1080,
+    "height": 1080,
+    "colors": [
+      "pembe",
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-22T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1691082475719592"
+  },
+  {
+    "id": "819ec02b5e52",
+    "file": "819ec02b5e52.jpg",
+    "brand": "Costa Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Mocha Italia Lezzet Ödülü, yumuşak içim",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "pembe",
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-22T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1122123820631580"
+  },
+  {
+    "id": "697d6d131f59",
+    "file": "697d6d131f59.jpg",
+    "brand": "Costa Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "İş dünyasının olduğu her yerde kahve önemlidir",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "pembe"
+    ],
+    "startedAt": "2026-10-22T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=2244489229828127"
+  },
+  {
+    "id": "86c0e2fc25c3",
+    "file": "86c0e2fc25c3.jpg",
+    "brand": "Ice Break",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Yeni Ice Break 15G protein latte, double shot",
+    "width": 640,
+    "height": 1136,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-10-08T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1725636721863673"
+  },
+  {
+    "id": "4be666518e83",
+    "file": "4be666518e83.jpg",
+    "brand": "Ice Break",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Yeni Ice Break 15G Protein Latte, soğuk kahve",
+    "width": 756,
+    "height": 1364,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-10-15T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1290835106501318"
+  },
+  {
+    "id": "913b91a18fa1",
+    "file": "913b91a18fa1.jpg",
+    "brand": "Ice Break",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Ice Break Protein Latte, double shot, %100 Robusta",
+    "width": 720,
+    "height": 1280,
+    "colors": [
+      "mavi",
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-15T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=981626944276718"
+  },
+  {
+    "id": "4a7ca2fbf0aa",
+    "file": "4a7ca2fbf0aa.jpg",
+    "brand": "LUUQ Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Şehrin temposuna kısa bir mola, sıcak kafe atmosferi",
+    "width": 1350,
+    "height": 1688,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2026-05-24T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=2367614013648741"
+  },
+  {
+    "id": "2ac048f341a1",
+    "file": "2ac048f341a1.jpg",
+    "brand": "Gastromaks",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "500 TL ve Papuli Türk kahvesi hediye",
+    "width": 1440,
+    "height": 1440,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2026-09-28T07:00:00.000Z",
+    "sourceUrl": "https://www.facebook.com/ads/library/?id=1093052520381445"
+  },
+  {
+    "id": "93d722fcc0fb",
+    "file": "93d722fcc0fb.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Nescafé: Yolunu bul, gününü şarj et, odaklan",
+    "width": 1122,
+    "height": 1402,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-07T20:16:51.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy37iJzTqK8bGFHqL1h1Fgc4N1-f-UFU-kVY3G_eDR8d4pXNg/"
+  },
+  {
+    "id": "93fdb2bd04f6",
+    "file": "93fdb2bd04f6.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Her şey bir Nescafé ile başlar",
+    "width": 736,
+    "height": 981,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-16T18:27:13.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwJPUNv_Yd4St-FnV-XIKf9v7ABYCL_I7rXMtMc0hV1CFgLcQ/"
+  },
+  {
+    "id": "65d214676bbb",
+    "file": "65d214676bbb.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Show Them Why It Matters - buzlu Nescafé",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "kahverengi",
+      "mavi"
+    ],
+    "startedAt": "2026-10-18T12:26:01.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwktQSvYWHQ3_8BDmSVa2w2qjOK8ZhpjXjwAX0fzNOG-5YV/"
+  },
+  {
+    "id": "5ea37bd64914",
+    "file": "5ea37bd64914.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Unlock the inner you - kahve çekirdeği kilit",
+    "width": 736,
+    "height": 911,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-02-23T06:32:24.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxveR1AnI_WWDWUA51JC_WahKDRMFMErCitH_fM6Gd7JBvAJg/"
+  },
+  {
+    "id": "2c37d0522561",
+    "file": "2c37d0522561.jpg",
+    "brand": "Starbucks",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Buy 1 Get 1 - iced chocolate Frappuccino",
+    "width": 1280,
+    "height": 1600,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-08-25T18:09:43.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyY55KfIGjbkqpSgyXCz8EBTBFo9ssNaPxLRAk8ieHMDyzl/"
+  },
+  {
+    "id": "4146f337a014",
+    "file": "4146f337a014.jpg",
+    "brand": "Starbucks",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Buy 1 Free 1 - Two for One, Oh What Fun!",
+    "width": 564,
+    "height": 564,
+    "colors": [
+      "kirmizi",
+      "turuncu"
+    ],
+    "startedAt": "2024-10-02T19:08:07.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy_QZNwthcUw9uRzXnYdSzyGC-iGWhqBmIdRH6xV7Db7gIfMA/"
+  },
+  {
+    "id": "5d3f68faea2c",
+    "file": "5d3f68faea2c.jpg",
+    "brand": "Starbucks",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Swipe to customize your cold brew",
+    "width": 736,
+    "height": 1104,
+    "colors": [
+      "kirmizi",
+      "yesil"
+    ],
+    "startedAt": "2021-12-16T02:40:48.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzegtzNCiUpaSXvo9laO_6zpXl7LQ11l8inrbtf_xa1uAP7/"
+  },
+  {
+    "id": "e3331de66798",
+    "file": "e3331de66798.jpg",
+    "brand": "Nespresso",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Nespresso. What else?",
+    "width": 1164,
+    "height": 1600,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2025-08-19T15:21:30.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwV2Lm7x3cEw76qkX_E4wS7Q6KOK0YofK0y32r0S1-9bcom/"
+  },
+  {
+    "id": "ce6b7f14ed42",
+    "file": "ce6b7f14ed42.jpg",
+    "brand": "Nespresso",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Fresh brew for a fresh start",
+    "width": 969,
+    "height": 1200,
+    "colors": [
+      "turuncu"
+    ],
+    "startedAt": "2022-09-01T02:14:25.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShweqQlFYMAOevDlFxVgOBqwI95b4Dm1KfUJ1Ykuj1Oyj0OwyA/"
+  },
+  {
+    "id": "5190b7e09950",
+    "file": "5190b7e09950.jpg",
+    "brand": "Tim Hortons",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "A bond that's timeless - Tims?",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-15T09:06:15.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzbyaKcFPAOzOYQsGLdQHa6kxtx3SInrwHmOqbK1YfyOlI29A/"
+  },
+  {
+    "id": "242c40b0313b",
+    "file": "242c40b0313b.jpg",
+    "brand": "Carnation",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Carnation your coffee - retro dergi reklamı",
+    "width": 564,
+    "height": 778,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2024-10-02T14:38:50.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyjRSYzAmB8f3bY3IKYrPfsRPGwx12NdCQc-2WdKxp7mfIg/"
+  },
+  {
+    "id": "0f22f1a20689",
+    "file": "0f22f1a20689.jpg",
+    "brand": "Davidoff Café",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Mornings as usual. Same day, a finer perspective",
+    "width": 1024,
+    "height": 1536,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-09-24T10:53:10.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxRrWnqqmLqKUp04-oB9YYdWFGkhjAwcaO6O2u5-lhPrCcD/"
+  },
+  {
+    "id": "b3a9e21817ae",
+    "file": "b3a9e21817ae.jpg",
+    "brand": "L'OR Espresso",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Onyx Noir Force 12 - espresso gücü",
+    "width": 564,
+    "height": 798,
+    "colors": [
+      "kahverengi",
+      "sari"
+    ],
+    "startedAt": "2016-03-21T05:28:12.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShymwrmbpIZb9e8RcJTObNgYdxqO5V5YGP6mqhOuKollyV25/"
+  },
+  {
+    "id": "7e00f648bbb9",
+    "file": "7e00f648bbb9.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "You're calibrating espresso wrong",
+    "width": 1196,
+    "height": 1600,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-08T23:16:35.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyiHGT_nPcI5Q4Ql_R1WQEq9Ed_7TWX1fu0MckIvB2JM9Wq/"
+  },
+  {
+    "id": "a981a8e162d8",
+    "file": "a981a8e162d8.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Execute your boring brew",
+    "width": 1073,
+    "height": 1600,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-03-17T02:10:02.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxMyKju87zluEkm1efWLfr-pPvx0wdETiOf2o7tmk_E7uSk/"
+  },
+  {
+    "id": "e163c8b4014d",
+    "file": "e163c8b4014d.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Cold Brew Concentrate - yarı konsantre, yarı su",
+    "width": 1280,
+    "height": 1600,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2025-08-18T04:51:52.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy3uI8Vr3p6_JsoFQhcID9_cmf-M06KILqO4fzFpkuo_6yd/"
+  },
+  {
+    "id": "e717e4aba4c9",
+    "file": "e717e4aba4c9.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "İndirim",
+    "title": "Cold Coffee $10 - mavi damalı poster",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-08-24T11:00:40.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyG_NvaurOKT-GWcvDww3WecMulnfPEZr_8m7JXMXqJFH8vrA/"
+  },
+  {
+    "id": "5963a130c6e6",
+    "file": "5963a130c6e6.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Espresso - İtalyan retro poster",
+    "width": 857,
+    "height": 1200,
+    "colors": [
+      "yesil"
+    ],
+    "startedAt": "2025-06-12T17:04:31.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwEykzSnCK7oaJ06nD9-N9uudT94H631WFK_lIpbjdXh_R4/"
+  },
+  {
+    "id": "4354eba250a1",
+    "file": "4354eba250a1.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Coffee is my love language",
+    "width": 1054,
+    "height": 1492,
+    "colors": [
+      "turuncu",
+      "mavi"
+    ],
+    "startedAt": "2026-07-20T09:11:33.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyV9vq9cWC0c-ycsY1DRSxkts9TxmwwPPIXhIsxOHySXMItEA/"
+  },
+  {
+    "id": "aef82ac4dbba",
+    "file": "aef82ac4dbba.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Menü",
+    "title": "Coffee House Always - tebeşir menü panosu",
+    "width": 857,
+    "height": 1200,
+    "colors": [
+      "sari",
+      "kahverengi"
+    ],
+    "startedAt": "2022-08-18T16:19:47.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxDQ6g0Z82ChEp-0Hi4htu1BhdDoO8WSCDlig5IOeWWxPSm/"
+  },
+  {
+    "id": "e0c021d3c9df",
+    "file": "e0c021d3c9df.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Bir Fincan Kahve - İzmir 3. Nesil Kahve Fest",
+    "width": 849,
+    "height": 1200,
+    "colors": [
+      "kahverengi",
+      "turuncu"
+    ],
+    "startedAt": "2024-05-17T12:20:47.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzxHjuxNsqRetT21C1xeJvY97jQA4dn63n9pDYUrCKksvWQ/"
+  },
+  {
+    "id": "30d1bf00c57e",
+    "file": "30d1bf00c57e.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Bol kahkahalı, bol sohbetleriniz eşliğinde hayırlı olsun",
+    "width": 1054,
+    "height": 1492,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-05-14T15:02:04.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwF-bUZgDf32XrOVWlAtjHShIvlWgoz9HxY3QcYhwopiRX0/"
+  },
+  {
+    "id": "72c7b51ffd8f",
+    "file": "72c7b51ffd8f.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Kahve zamanı - tatlı anlarını taçlandır",
+    "width": 1131,
+    "height": 1600,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2025-05-14T08:30:57.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwHuvVbu8WLsxZsb7x6gqN_bST--6yBTxdDW3AOJq595N83/"
+  },
+  {
+    "id": "c34fcba2d9ca",
+    "file": "c34fcba2d9ca.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Opening Soon - yeni kafe açılış duyurusu",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-07-01T07:42:09.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShydg4GVLWRdf6F6mN8_wi0SRsYN8GGe8ZZgVAHebLPReTIS/"
+  },
+  {
+    "id": "48b71dc65f14",
+    "file": "48b71dc65f14.jpg",
+    "brand": "Starbucks",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Feel the freshness: Cold Vanilla Brew",
+    "width": 675,
+    "height": 1200,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-13T14:12:18.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy_UzQIJhsT-H_5-EmGwWG1wCNxLkBBXFW7VgX-mFtykwUg_A/"
+  },
+  {
+    "id": "f41f397d5488",
+    "file": "f41f397d5488.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Good days start here: Coffee",
+    "width": 1122,
+    "height": 1402,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-09-14T14:53:33.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzFseH6hCnv8AHarwsjIW4gBDs-BxbbGoxV0kDFvijfgSd4/"
+  },
+  {
+    "id": "226ae3254e7d",
+    "file": "226ae3254e7d.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Stay active. Make your day.",
+    "width": 1024,
+    "height": 1024,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-20T23:12:52.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzeHz9W_LFaQvYT8pceu9IE-_JHZ2yZYxdS2Is6p1fYGXyV/"
+  },
+  {
+    "id": "c2859d7493e6",
+    "file": "c2859d7493e6.jpg",
+    "brand": "Nescafé",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "There's always time for Nescafé",
+    "width": 540,
+    "height": 711,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2024-05-20T03:47:39.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy6yoPNYoMxysY0LK_UQCzINqBjsok6qt02zVnsvAvmXStZbQ/"
+  },
+  {
+    "id": "776352d852c7",
+    "file": "776352d852c7.jpg",
+    "brand": "Lavazza",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Espress yourself.",
+    "width": 748,
+    "height": 1024,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2018-03-17T21:08:27.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyDWiXapU44aZMtG8bMb5FCPq0BnVu2paAk1_4p1lgefEqT/"
+  },
+  {
+    "id": "4ef2202df88f",
+    "file": "4ef2202df88f.jpg",
+    "brand": "Lavazza",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "More than Italian",
+    "width": 960,
+    "height": 1286,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2021-02-15T01:23:48.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxOM70nG7GyRj0tGBmuzZnPLle7iiVX41mhDA4C9iW6ZK81/"
+  },
+  {
+    "id": "489e2c6cffa5",
+    "file": "489e2c6cffa5.jpg",
+    "brand": "Costa Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Keep going, stay fueled",
+    "width": 1200,
+    "height": 1600,
+    "colors": [
+      "kirmizi",
+      "pembe"
+    ],
+    "startedAt": "2026-02-23T00:03:42.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxQfDPCpsjjx3qH_ekzlew2_H5n6kzYeAZ6HgM6KkF_HDSQSQ/"
+  },
+  {
+    "id": "62411c93810e",
+    "file": "62411c93810e.jpg",
+    "brand": "Sunrise Coffee",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Start your day the right way! Sunrise Coffee",
+    "width": 678,
+    "height": 960,
+    "colors": [
+      "turuncu"
+    ],
+    "startedAt": "2026-10-25T02:53:03.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzGZm1hCa35-s0I5EcRUJjT8_ubFDEU5NnOjG185CIERcUfow/"
+  },
+  {
+    "id": "259d5d5d923c",
+    "file": "259d5d5d923c.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Menü",
+    "title": "Good Morning: espresso, pour-over, pastries",
+    "width": 1067,
+    "height": 1600,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-06-11T07:20:05.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwzCdlZrlKpuHhq53vTnq2lVkfNNvelyj_v5ZVnRN3C9RXGYg/"
+  },
+  {
+    "id": "a98f4a67f1ed",
+    "file": "a98f4a67f1ed.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Rise & Brew",
+    "width": 1067,
+    "height": 1600,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-06-28T10:48:36.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShykiKXObyM6iHZa2aKsSfc4bCh-cs9Y9AbaSdiSWbxweehRNQ/"
+  },
+  {
+    "id": "78d26f5c22b5",
+    "file": "78d26f5c22b5.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Fueled by caffeine",
+    "width": 1054,
+    "height": 1492,
+    "colors": [
+      "kirmizi",
+      "yesil"
+    ],
+    "startedAt": "2026-07-20T09:21:05.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwEVnTDB-phie4077QRZT3QphW9-YMOfzNMoO4muK1SweU6-w/"
+  },
+  {
+    "id": "190880153383",
+    "file": "190880153383.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "Opening soon",
+    "width": 1131,
+    "height": 1600,
+    "colors": [
+      "kirmizi"
+    ],
+    "startedAt": "2026-10-13T19:25:18.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShw__oEgvL17mHOO9mIbTt-voP_JLrWtMCZ3cVf-vKI-sF-TOg/"
+  },
+  {
+    "id": "f7b1f6fcc40b",
+    "file": "f7b1f6fcc40b.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "İndirim",
+    "title": "20% off coffee & merch, order now",
+    "width": 1080,
+    "height": 1350,
+    "colors": [
+      "mavi"
+    ],
+    "startedAt": "2026-04-11T06:35:29.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxrbpu9XkKy3yKSxXcWR-jI01Dvqh23rtok5Gcn7sEw8bC7eg/"
+  },
+  {
+    "id": "fcadc66f7300",
+    "file": "fcadc66f7300.jpg",
+    "brand": "Sunnyside Cafe",
+    "sector": "Kahve & Kafe",
+    "type": "İndirim",
+    "title": "Midyear coffee sale: Iced Coffee 20% off",
+    "width": 1131,
+    "height": 1600,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-07-16T11:46:33.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShycSFb3LO5JpC_83Ou4NdZ76xu_GlMEfeazTN4UoqVEXCixmA/"
+  },
+  {
+    "id": "3e7d1dacc62c",
+    "file": "3e7d1dacc62c.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "İndirim",
+    "title": "Premium cold coffee, %5 indirim",
+    "width": 736,
+    "height": 1104,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-03T19:47:06.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShzOONxeq5bQZg7JeTlHTRMJ_LGZCe-KjoXJLcYm-3-f1y6ugQ/"
+  },
+  {
+    "id": "b52874b8715f",
+    "file": "b52874b8715f.jpg",
+    "brand": "Dibek Kahve",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Mutluluğa bir fincanlık aralık",
+    "width": 1136,
+    "height": 1408,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-22T04:52:13.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShy_AC3xPupZmD85SlT1ZB1wOaxgkuWBymjibmbFeRaTTtzc/"
+  },
+  {
+    "id": "7acd75158679",
+    "file": "7acd75158679.jpg",
+    "brand": "Tréscol",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Tréscol'dan büyülü bir İstanbul sabahı",
+    "width": 1600,
+    "height": 1600,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-10-10T09:16:08.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxi5HJbiz1jFXWjc_sm95-IHup649_7lmzXMdSbH8Ne5mSU/"
+  },
+  {
+    "id": "a797d7dc9c89",
+    "file": "a797d7dc9c89.jpg",
+    "brand": "Ali Efendi",
+    "sector": "Kahve & Kafe",
+    "type": "Ürün Lansmanı",
+    "title": "Ali Efendi Türk Kahvesi",
+    "width": 1024,
+    "height": 1536,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-04-09T19:50:55.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwK28QhBIEhMsQWQxOktX3IprX0CWbPWkRauy6oUCf_cmOG/"
+  },
+  {
+    "id": "3f85a1ee0e07",
+    "file": "3f85a1ee0e07.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Kampanya",
+    "title": "We are open: 9:00 AM - 6:00 PM",
+    "width": 627,
+    "height": 1113,
+    "colors": [
+      "yesil"
+    ],
+    "startedAt": "2026-05-27T02:02:02.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShwZsMW7BI8iVcSA064_s0F2xKrJDChiK3m6mSLj65jCml4qvQ/"
+  },
+  {
+    "id": "f5a71a467ff4",
+    "file": "f5a71a467ff4.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Menü",
+    "title": "Coffee: your daily ritual, $3.50",
+    "width": 1044,
+    "height": 1507,
+    "colors": [
+      "turuncu",
+      "yesil"
+    ],
+    "startedAt": "2026-10-13T22:43:35.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShyS3iDKy5BqxVvI1_LnruYPWVYAzWHMb86259N5ZCtPfPos9w/"
+  },
+  {
+    "id": "ae0f251614ba",
+    "file": "ae0f251614ba.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Running on espresso",
+    "width": 1000,
+    "height": 1500,
+    "colors": [
+      "kahverengi"
+    ],
+    "startedAt": "2026-06-29T05:15:53.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShxM1e6H8NmyAG0BwNd-iTKi-n6VJKY-8wnwDcX4b7ArQcA2/"
+  },
+  {
+    "id": "a076624381dd",
+    "file": "a076624381dd.jpg",
+    "brand": "Pinterest İlhamı",
+    "sector": "Kahve & Kafe",
+    "type": "Marka Görseli",
+    "title": "Latte! Coffee. Smooth. Made for you.",
+    "width": 1092,
+    "height": 1440,
+    "colors": [
+      "turuncu",
+      "kahverengi"
+    ],
+    "startedAt": "2026-05-26T08:50:17.000Z",
+    "sourceUrl": "https://www.pinterest.com/pin/e1_AfqPShx564b6KcuvWBfto3RwgBwqRoh8r-pv5ee8RmHmyZ37BCBA/"
   }
 ]

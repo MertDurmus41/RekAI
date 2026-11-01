@@ -43,27 +43,26 @@ async function callRetry(apify: ApifyClient, actor: string, input: Record<string
 
 async function pinterest(apify: ApifyClient, keywords: string[], limit: number): Promise<Item[]> {
   const out: Item[] = [];
-  // Her anahtar kelime ayrı çalışır; aynı anda en fazla 3 çalıştırma (Apify eşzamanlılık sınırı).
+  // silentflow aktörü sonuç başına ücretlidir (epctex'in ücretsiz aylık çalıştırma limiti hızla doluyor).
+  // Her anahtar kelime ayrı çalışır; aynı anda en fazla 2 çalıştırma (Apify eşzamanlılık sınırı).
   for (let i = 0; i < keywords.length; i += 2) {
     const batch = keywords.slice(i, i + 2);
     const results = await Promise.all(
       batch.map(async (q) => {
-        const run = await callRetry(apify, "epctex/pinterest-scraper", { search: q, maxItems: limit, getDetails: false, endPage: 3 });
+        const run = await callRetry(apify, "silentflow/pinterest-scraper-ppr", { search: q, maxItems: limit });
         return { q, items: (await apify.dataset(run.defaultDatasetId).listItems()).items as Raw[] };
       }),
     );
     for (const { q, items } of results) {
       console.log(`  Pinterest "${q}": ${items.length} pin`);
       for (const p of items) {
-        if (p.type !== "pin" || !p.images) continue;
-        const img = p.images.orig?.url && p.images.orig.width <= 2400 ? p.images.orig : (p.images["736x"] ?? p.images["474x"]);
-        if (!img?.url) continue;
+        if (p.type !== "pin" || p.isVideo || !p.imageUrl) continue;
         out.push({
-          imageUrl: img.url,
-          brand: String(p.owner?.full_name ?? p.board?.owner?.full_name ?? "Pinterest").trim() || "Pinterest",
-          body: `${p.grid_title ?? p.title ?? ""} ${p.description ?? ""}`.replace(/\s+/g, " ").trim().slice(0, 200),
+          imageUrl: String(p.imageUrl),
+          brand: String(p.pinner?.fullName ?? p.pinner?.name ?? p.pinner?.username ?? "Pinterest").trim() || "Pinterest",
+          body: `${p.gridTitle ?? p.title ?? ""} ${p.description ?? ""}`.replace(/\s+/g, " ").trim().slice(0, 200),
           sourceUrl: String(p.url),
-          startedAt: p.created_at ? new Date(p.created_at).toISOString() : null,
+          startedAt: p.createdAt ? new Date(p.createdAt).toISOString() : null,
         });
       }
     }

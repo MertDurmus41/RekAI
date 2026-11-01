@@ -54,7 +54,9 @@ function LoginForm() {
       setError(
         error.message.toLowerCase().includes("anonymous")
           ? "Giriş şu an kapalı: Supabase'de Authentication → Sign In / Providers → \"Allow anonymous sign-ins\" açılmalı."
-          : error.message,
+          : error.message.toLowerCase().includes("failed to fetch")
+            ? "Sunucuya ulaşılamıyor: Supabase projesi bulunamadı (silinmiş veya duraklatılmış olabilir). .env.local içindeki NEXT_PUBLIC_SUPABASE_URL'i kontrol et."
+            : error.message,
       );
       setStatus("idle");
       return;
