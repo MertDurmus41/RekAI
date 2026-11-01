@@ -91,7 +91,7 @@ export default function Landing() {
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={ad.id}
-                src={ad.src}
+                src={ad.thumb}
                 alt=""
                 width={ad.width}
                 height={ad.height}

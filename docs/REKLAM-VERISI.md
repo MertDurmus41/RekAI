@@ -53,6 +53,23 @@ npx tsx scripts/finalize-candidates.ts candidates/<klasör>
 
 Görseller `public/pulled/` altına kopyalanır, künyeleri `src/data/pulled.json` dosyasına eklenir, baskın renkler görselden hesaplanır. Aynı reklam iki kez eklenmez.
 
+## Pinterest ve Google Ads Şeffaflık Merkezi
+
+Meta dışındaki kaynaklar için `scripts/fetch-coffee.ts` aynı aday biçimini üretir (sonra `keep.json` ve `finalize-candidates.ts` aynen geçerli):
+
+```bash
+npx tsx scripts/fetch-coffee.ts --source pinterest --brand "Kahve Pinterest" --sector "Kahve & Kafe" --limit 60 --keywords "coffee ad design,kahve reklamı"
+npx tsx scripts/fetch-coffee.ts --source google --brand "Kahve Google" --sector "Kahve & Kafe" --region TR --limit 25 --keywords "kahvedunyasi.com,espressolab.com"
+```
+
+- Pinterest için `epctex/pinterest-scraper`, Google için `scrapesage/google-ads-transparency-scraper` kullanıldı. Pinterest aktörü sorgu başına yaklaşık 10 pin döndürdü; çeşitlilik için çok sayıda farklı sorgu gerekir.
+- Google'ın görsel reklamları çoğunlukla banner boyutlu ya da kart önizlemesi olarak geliyor; kullanılabilir olanlar azdı. Marka adı ("advertiserName") reklamveren şirketin adıdır (örn. Espressolab için ESLAB KAHVE), elle düzeltmek gerekir.
+- Apify ücretsiz planı aynı anda 5 çalıştırmaya izin verir; betik sınıra takılınca bekleyip yeniden dener.
+
+## Hız: küçük görseller
+
+Galeri `public/thumbs` (520 px webp) ve reklam penceresi `public/medium` (1100 px webp) kullanır; orijinaller yalnızca remix için `public/pulled` içinde durur. `finalize-candidates.ts` yeni reklam eklerken bunları kendisi üretir; eskileri yeniden üretmek için `npx tsx scripts/make-thumbs.ts --force`.
+
 ## Öğrenilenler
 
 - Apify aktörüne verilen Reklam Kütüphanesi adresinde `media_type=image` filtresi kullanılınca sonuç boş dönüyor; filtre kullanılmıyor.

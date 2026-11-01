@@ -22,6 +22,8 @@ export const COLORS: { key: ColorKey; label: string; hex: string }[] = [
 export type SampleAd = {
   id: string;
   src: string;
+  thumb: string;
+  medium: string;
   brand: string;
   sector: string;
   type: string;
@@ -34,17 +36,19 @@ export type SampleAd = {
 
 // Masaüstü\Yemek klasöründen elle eklenen, yeterince büyük iki reklam.
 const MANUAL: SampleAd[] = [
-  { id: "ad-01", src: "/ads/ad-01.jpg", brand: "Anatolium", sector: "Restoran", type: "Kampanya", title: "1 yemek sizden, 1 yemek bizden", width: 1000, height: 1000, colors: ["kirmizi"] },
-  { id: "ad-14", src: "/ads/ad-14.jpg", brand: "KFC", sector: "Tavuk", type: "Kampanya", title: "Big Treat Week", width: 568, height: 946, colors: ["kirmizi"] },
+  { id: "ad-01", src: "/ads/ad-01.jpg", thumb: "/thumbs/ad-01.webp", medium: "/medium/ad-01.webp", brand: "Anatolium", sector: "Restoran", type: "Kampanya", title: "1 yemek sizden, 1 yemek bizden", width: 1000, height: 1000, colors: ["kirmizi"] },
+  { id: "ad-14", src: "/ads/ad-14.jpg", thumb: "/thumbs/ad-14.webp", medium: "/medium/ad-14.webp", brand: "KFC", sector: "Tavuk", type: "Kampanya", title: "Big Treat Week", width: 568, height: 946, colors: ["kirmizi"] },
 ];
 
 // scripts/fetch-ads.ts ile Apify'dan çekilen reklamlar (public/pulled altındaki görseller).
-type PulledEntry = Omit<SampleAd, "src" | "colors"> & { file: string; colors: string[] };
+type PulledEntry = Omit<SampleAd, "src" | "thumb" | "medium" | "colors"> & { file: string; colors: string[] };
 
 const PULLED: SampleAd[] = (pulled as PulledEntry[]).map(({ file, colors, ...rest }) => ({
   ...rest,
   colors: colors as ColorKey[],
   src: `/pulled/${file}`,
+  thumb: `/thumbs/${rest.id}.webp`,
+  medium: `/medium/${rest.id}.webp`,
 }));
 
 const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;

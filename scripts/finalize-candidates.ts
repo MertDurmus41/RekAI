@@ -7,7 +7,7 @@
  *   [{ "n": 3, "title": "2 al 1 öde", "type": "İndirim" }, ...]
  * type: İndirim | Kampanya | Menü | Ürün Lansmanı | Marka Görseli
  */
-import { copyFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import sharp from "sharp";
 
 const OUT_JSON = "src/data/pulled.json";
@@ -61,6 +61,11 @@ async function main() {
     if (!m || ids.has(m.id) || sources.has(m.sourceUrl)) continue;
     const file = `${m.id}.jpg`;
     copyFileSync(`${dir}/${m.file}`, `public/pulled/${file}`);
+    // Galeri için küçük sürümler (kart: 520 px, pencere: 1100 px, webp)
+    mkdirSync("public/thumbs", { recursive: true });
+    mkdirSync("public/medium", { recursive: true });
+    await sharp(`${dir}/${m.file}`).resize({ width: 520, withoutEnlargement: true }).webp({ quality: 76 }).toFile(`public/thumbs/${m.id}.webp`);
+    await sharp(`${dir}/${m.file}`).resize({ width: 1100, withoutEnlargement: true }).webp({ quality: 82 }).toFile(`public/medium/${m.id}.webp`);
     entries.push({
       id: m.id,
       file,

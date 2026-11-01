@@ -201,7 +201,7 @@ export function RemixModal({ ad, onClose }: { ad: SampleAd; onClose: () => void 
 
             <div style={ratio} className="relative mx-auto max-h-[calc(100vh-236px)] min-h-64 w-auto overflow-hidden rounded-xl border-2 border-line">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={ad.src} alt={`${ad.brand} orijinal reklam`} draggable={false} className="size-full select-none" />
+              <img src={ad.medium} alt={`${ad.brand} orijinal reklam`} draggable={false} className="size-full select-none" />
               <DrawLayer
                 width={ad.width}
                 height={ad.height}
@@ -325,7 +325,7 @@ export function RemixModal({ ad, onClose }: { ad: SampleAd; onClose: () => void 
               className="relative mx-auto max-h-[calc(100vh-236px)] min-h-64 w-auto overflow-hidden rounded-xl border-2 border-dashed border-line bg-wash"
             >
               {busy ? (
-                <GeneratingView src={ad.src} />
+                <GeneratingView src={ad.thumb} />
               ) : result ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={result.url} alt="Remix sonucu" className="size-full" />

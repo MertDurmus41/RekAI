@@ -6,10 +6,9 @@ export default async function GalleryPage() {
   let email: string | null = null;
   if (process.env.NEXT_PUBLIC_SUPABASE_URL) {
     const supabase = await createClient();
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    email = (user?.user_metadata?.email_label as string | undefined) ?? user?.email ?? null;
+    const { data } = await supabase.auth.getClaims();
+    const claims = data?.claims;
+    email = (claims?.user_metadata?.email_label as string | undefined) ?? claims?.email ?? null;
   }
   return <AdBrowser email={email} />;
 }

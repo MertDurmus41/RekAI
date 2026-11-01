@@ -192,7 +192,7 @@ export function AdBrowser({ email = null }: { email?: string | null }) {
                     }`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={cover.src} alt="" loading="lazy" className="size-full rounded-lg object-cover" />
+                    <img src={cover.thumb} alt="" decoding="async" loading="lazy" className="size-full rounded-lg object-cover" />
                   </span>
                   <span className={`mt-1.5 block truncate text-xs font-semibold ${active ? "text-ib" : "text-ink"}`}>
                     {brand}
@@ -274,7 +274,8 @@ export function AdBrowser({ email = null }: { email?: string | null }) {
                   )}
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={ad.src}
+                    src={ad.thumb}
+                    decoding="async"
                     alt={`${ad.brand}: ${ad.title}`}
                     width={ad.width}
                     height={ad.height}
